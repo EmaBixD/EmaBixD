@@ -4,9 +4,7 @@
 - 💞️ I’m looking to collaborate on cheat developing
 - 📫 Message me on git for collaborations
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=180 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=EmaBixD&layout=compact&langs_count=8&card_width=250" />
-</a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=180 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=LUA-NoRecoil" />
-</a>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EmaBixD&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
+
+# Last project:
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=Arduino-Weather)](https://github.com/EmaBixD/Arduino-Weather)
