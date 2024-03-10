@@ -8,7 +8,7 @@
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=EmaBixD&theme=ambient_gradient" />
 </a>
 <a href="https://github.com/EmaBixD">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=EmaBixD&layout=compact&langs_count=8&theme=ambient_gradient&card_width=320" />
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=EmaBixD&layout=compact&langs_count=8&theme=ambient_gradient" />
 </a>
 
 ---
