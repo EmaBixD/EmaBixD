@@ -4,4 +4,9 @@
 - 💞️ I’m looking to collaborate on cheat developing
 - 📫 Message me on git for collaborations
 
-[![EmaBixD's GitHub stats](https://github-readme-stats.vercel.app/api/top-langs?username=EmaBixD&theme=algolia&show_icons=true)](https://github.com/EmaBixD)
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img height=100 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=EmaBixD&layout=compact&langs_count=8&card_width=500" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img height=100 align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=LUA-NoRecoil" />
+</a>
