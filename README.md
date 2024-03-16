@@ -15,8 +15,8 @@
 
 ### Last projects:
 <a href="https://github.com/EmaBixD/Arduino-Weather">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=Arduino-Weather&show_owner=true&theme=shadow_red&bg_color=00000000" weight=20 />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=Arduino-Weather&show_owner=false&theme=shadow_red&bg_color=00000000" weight=20 />
 </a>
 <a href="https://github.com/EmaBixD">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=LUA-NoRecoil&show_owner=true&theme=shadow_red&bg_color=00000000" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=python-keylogger&show_owner=false&theme=shadow_red&bg_color=00000000" />
 </a>
