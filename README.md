@@ -37,7 +37,7 @@
 ## 🎯 Highlight:
 
 <a href="https://github.com/EmaBixD/LocalDeck">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=Arduino-Weather&show_owner=false&theme=shadow_red&bg_color=00000000" weight=20 />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=LocalDeck&show_owner=false&theme=shadow_red&bg_color=00000000" weight=20 />
 </a>
 <a href="https://github.com/EmaBixD/python-keylogger">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=EmaBixD&repo=python-keylogger&show_owner=false&theme=shadow_red&bg_color=00000000" />
