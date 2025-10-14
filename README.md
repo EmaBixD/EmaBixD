@@ -2,8 +2,8 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Lilita+One&pause=1000&color=B60000&random=false&width=435&lines=Hi%2C+I%E2%80%99m+Ema)](https://git.io/typing-svg)
 
-- 👀 I’m interested in Arduino and Python
-- 🌱 I’m currently learning C
+- 👀 I’m interested in Arduino projects
+- 🌱 I’m currently learning Java
 - 📫 Open for collaborations
 
 ## 💻 Tech stack/setup:
