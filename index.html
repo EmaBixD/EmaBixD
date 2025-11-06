@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmaBixD</title>
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ==================== RESET AND BASE ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ==================== BODY AND BACKGROUND ==================== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 25%, #2d0a0a 50%, #4a0a0a 75%, #8b2121 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            cursor: none;
+        }
+
+        /* Fire/ash particle animation effect in background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(3px 3px at 15% 20%, #ff4444, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 35% 15%, #cc3333, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 25% 40%, #999, rgba(0,0,0,0)),
+                radial-gradient(3px 3px at 50% 30%, #ff3333, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 70% 45%, #888, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 20% 70%, #ff5555, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 60% 65%, #777, rgba(0,0,0,0)),
+                radial-gradient(3px 3px at 80% 50%, #dd2222, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 40% 80%, #999, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 75% 75%, #cc4444, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 30% 60%, #666, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 85% 25%, #ff2222, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 10% 35%, #ff5544, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 45% 55%, #888, rgba(0,0,0,0)),
+                radial-gradient(3px 3px at 65% 25%, #ff3344, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 55% 75%, #aa3333, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 5% 65%, #777, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 90% 15%, #dd3333, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 22% 45%, #999, rgba(0,0,0,0)),
+                radial-gradient(3px 3px at 72% 68%, #ff4455, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 15% 85%, #666, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 88% 78%, #cc3333, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 38% 25%, #ff5566, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 68% 38%, #888, rgba(0,0,0,0)),
+                radial-gradient(3px 3px at 12% 52%, #ff2233, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 92% 42%, #aa4444, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200% 200%;
+            pointer-events: none;
+            animation: stars 60s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes stars {
+            from {
+                background-position: 0% 0%;
+            }
+            to {
+                background-position: 200% 200%;
+            }
+        }
+
+        /* ==================== MAIN LAYOUT ==================== */
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                         0 0 40px rgba(138, 43, 226, 0.3);
+            letter-spacing: 3px;
+            animation: glow 3s ease-in-out infinite;
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-weight: 700;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                             0 0 40px rgba(138, 43, 226, 0.3);
+            }
+            50% {
+                text-shadow: 0 0 30px rgba(255, 255, 255, 0.8),
+                             0 0 60px rgba(138, 43, 226, 0.6);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            cursor: none;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #ff1744;
+            margin-top: 15px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            cursor: none;
+        }
+
+        .subtitle:hover {
+            text-shadow: 0 0 20px rgba(255, 23, 68, 0.8);
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+
+        /* ==================== CONTEXT MENU ==================== */
+        .custom-context-menu {
+            position: fixed;
+            background: rgba(20, 20, 20, 0.75);
+            border: 2px solid #ff1744;
+            border-radius: 8px;
+            padding: 8px 0;
+            z-index: 10000;
+            display: none;
+            min-width: 200px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(255, 23, 68, 0.3);
+        }
+
+        .custom-context-menu.show {
+            display: block;
+        }
+
+        .context-item {
+            padding: 10px 20px;
+            color: #fff;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+            cursor: none;
+        }
+
+        .context-item:hover {
+            background: rgba(255, 23, 68, 0.2);
+            border-left-color: #ff1744;
+            padding-left: 25px;
+        }
+
+        /* ==================== CUSTOM CURSOR ==================== */
+        .cursor-dot {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background-color: #ff1744;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99999;
+            opacity: 0;
+            transition: opacity 0.3s ease, background-color 0.2s ease;
+        }
+
+        .cursor-ring {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            border: 2px solid #ff1744;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99998;
+            opacity: 0;
+        }
+
+        body.cursor-active .cursor-dot,
+        body.cursor-active .cursor-ring {
+            opacity: 1;
+        }
+
+        /* Dot turns white when on links/menu */
+        .cursor-dot.active {
+            background-color: #fff !important;
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EmaBixD</h1>
+        <a href="https://github.com/EmaBixD/" target="_blank" rel="noopener noreferrer">
+            <div class="subtitle">github</div>
+        </a>
+    </div>
+
+    <div class="custom-context-menu" id="contextMenu">
+        <div class="context-item" onclick="copyToClipboard('EmaBixD')">Copy name</div>
+        <div class="context-item" onclick="copyToClipboard('https://github.com/EmaBixD/')">Copy GitHub link</div>
+        <div class="context-item" onclick="reloadPage()">Reload page</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <script>
+        /* ==================== CUSTOM CURSOR ==================== */
+        // Initialize custom cursor elements
+        const cursorDot = document.getElementById('cursorDot');
+        const cursorRing = document.getElementById('cursorRing');
+        
+        // Position and state variables
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let ringX = mouseX;
+        let ringY = mouseY;
+        let cursorActive = false;
+
+        // Initialize cursor positions at screen center
+        cursorDot.style.left = (mouseX - 4) + 'px';
+        cursorDot.style.top = (mouseY - 4) + 'px';
+        cursorRing.style.left = (ringX - 16) + 'px';
+        cursorRing.style.top = (ringY - 16) + 'px';
+
+        // Track mouse movement and update center dot
+        document.addEventListener('mousemove', (e) => {
+            // Activate custom cursor on first movement
+            if (!cursorActive) {
+                document.body.classList.add('cursor-active');
+                cursorActive = true;
+            }
+
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // Center dot follows mouse instantly
+            cursorDot.style.left = (mouseX - 4) + 'px';
+            cursorDot.style.top = (mouseY - 4) + 'px';
+        });
+
+        // Animate outer ring with reduced gravity (trailing effect)
+        function animateCursorRing() {
+            ringX += (mouseX - ringX) * 0.40;
+            ringY += (mouseY - ringY) * 0.40;
+            
+            cursorRing.style.left = (ringX - 16) + 'px';
+            cursorRing.style.top = (ringY - 16) + 'px';
+            
+            requestAnimationFrame(animateCursorRing);
+        }
+        animateCursorRing();
+
+        // Add hover effect on links and menu - dot turns white
+        const interactiveElements = document.querySelectorAll('a, .subtitle, .context-item');
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorDot.classList.add('active');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursorDot.classList.remove('active');
+            });
+        });
+
+        /* ==================== CONTEXT MENU ==================== */
+        // Intercept right click and show custom menu
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            showContextMenu(e.pageX, e.pageY);
+        });
+
+        // Show custom menu and check screen boundaries
+        function showContextMenu(x, y) {
+            const menu = document.getElementById('contextMenu');
+            menu.classList.add('show');
+            menu.style.left = x + 'px';
+            menu.style.top = y + 'px';
+
+            // Prevent menu from going off screen - reposition if necessary
+            if (menu.offsetLeft + menu.offsetWidth > window.innerWidth) {
+                menu.style.left = (x - menu.offsetWidth) + 'px';
+            }
+            if (menu.offsetTop + menu.offsetHeight > window.innerHeight) {
+                menu.style.top = (y - menu.offsetHeight) + 'px';
+            }
+        }
+
+        // Hide menu when clicking elsewhere
+        document.addEventListener('click', () => {
+            document.getElementById('contextMenu').classList.remove('show');
+        });
+
+        /* ==================== UTILITY FUNCTIONS ==================== */
+        // Copy text to clipboard
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                document.getElementById('contextMenu').classList.remove('show');
+            });
+        }
+
+        // Reload page
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
